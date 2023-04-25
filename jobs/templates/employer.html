@@ -14,9 +14,17 @@
     <div class="box">
       <article class="media">
         <div class="media-left">
+          {% for _ in range(0, review['rating']): %}
+             <span class="fa fa-star checked"></span>
+          {% endfor %}
         </div>
         <div class="media-content">
           <div class="content">
+            <p><strong>title</strong>
+               <small>status</small>
+               <small>date</small>
+              review['title']
+            </p>
           </div>
         </div>
       </article>
